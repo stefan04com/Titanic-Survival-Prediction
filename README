@@ -1,0 +1,40 @@
+Titanic Survival Prediction
+
+Overview
+
+This project utilizes machine learning techniques to predict the survival of passengers aboard the Titanic. The dataset used for this prediction has been preprocessed and is saved in CSV format. The project consists of two main parts: data cleaning and model training.
+
+Files
+
+1. Data Cleaning Script
+This script handles the cleaning and preprocessing of the Titanic dataset. It focuses on the following tasks:
+
+Load Data: Reads the cleaned training data from a CSV file named cleaned_train.csv.
+Remove Outliers: Eliminates rows where the 'Age' exceeds 64 and 'Fare' exceeds 72 to reduce the impact of extreme values on the model.
+Save Cleaned Data: Writes the cleaned dataset back to the cleaned_train.csv file for further analysis and modeling.
+2. Model Training Script
+This script implements a machine learning model to predict Titanic passenger survival based on various features. Key functionalities include:
+
+Load Data: Reads the cleaned data from cleaned_train.csv and applies one-hot encoding to categorical features ('Sex' and 'Name').
+Feature Normalization: Normalizes the 'Age' and 'Fare' features using StandardScaler to ensure that the model performs optimally.
+Data Splitting: Divides the dataset into training and testing sets, with 80% of the data used for training and 20% for testing.
+Model Training: Trains a Random Forest Classifier on the training data.
+Model Evaluation: Evaluates the model's performance by calculating the accuracy score and generating a classification report, which provides additional metrics like precision, recall, and F1-score.
+Requirements
+
+Python 3.x
+Pandas
+Scikit-learn
+How to Run
+
+Ensure you have all the required libraries installed. You can install them using pip:
+Copy code
+pip install pandas scikit-learn
+Prepare the cleaned_train.csv file with the appropriate structure and values.
+Run the data cleaning script first to preprocess the data.
+Run the model training script to train the Random Forest model and evaluate its performance.
+Conclusion
+
+This project serves as a foundational exercise in data cleaning, preprocessing, and machine learning. By leveraging the Titanic dataset, it demonstrates how to build a predictive model, emphasizing the importance of data preparation in achieving reliable predictions.
+
+This README file provides a clear and concise explanation of the project's purpose, structure, and how to use the scripts. You can further modify it based on specific requirements or additional features implemented in the project.
